@@ -1,4 +1,6 @@
+import { Container } from "../home/Styled"
+
 const Properties = () => {
-  return <div>Properties</div>
+  return <Container>Properties</Container>
 }
 export default Properties
