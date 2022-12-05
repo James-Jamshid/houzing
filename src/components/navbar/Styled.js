@@ -6,16 +6,25 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 `
+export const Main = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  background: var(--colorPrimary);
+`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--colorPrimary);
+  /* background: var(--colorPrimary); */
   color: white;
   padding: var(--padding);
   height: 64px;
   font-size: 16px;
+  width: 100%;
+  //max-width 14404 berganimzda uni yana bitta containerga orab wrapper default widthni 100% qilib qoyish kere
   max-width: 1440px;
+
   //max-width ni yozishdan maqsad, yonlariga padding berganmiz agar
   //maxwidth berilmasa, ekran kattalshgan sari paddinglar ham kattalashib ketaveradi.
 `
