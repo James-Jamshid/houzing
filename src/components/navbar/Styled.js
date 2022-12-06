@@ -32,10 +32,15 @@ export const Wrapper = styled.div`
 //wrapper bolsa w 1440 bolishi kerak.
 export const Section = styled.div`
   /* display: flex;
-  align-items: center; */
+  align-items: center;
+  justify-content: center; */
+  /* border: 1px solid black; */
+  /* :hover {
+    color: #ac6b34;
+  } */
   cursor: ${({ logo }) => logo && "pointer"};
   .active {
-    color: brown;
+    color: #ac6b34;
   }
   //active degan clasname ocdik, indexjsda Linkga clasname berib isActive togri bolganda,
   //active classnami ishlasin deb buyruq berdik, sharti
