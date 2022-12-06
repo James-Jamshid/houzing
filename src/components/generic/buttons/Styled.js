@@ -15,9 +15,10 @@ export const getType = ({ type }) => {
       }
     case "light":
       return {
-        background: "#white",
+        background: "white",
         border: "1px solid #E6E9EC",
         color: "#0D263B",
+        id: "hover",
       }
     default:
       return {
@@ -39,9 +40,6 @@ export const Container = styled.button`
   width: ${({ width }) => (width ? `${width}px` : "120px")};
   //heightni distruptizatsiya qilib chaqirib olamiz va height true bolsa
   // osha heightni olchamini olsin aks xolda height 44px bo'lsin
-  :hover {
-    background: #123456;
-  }
   :active {
     opacity: 0.7;
   }

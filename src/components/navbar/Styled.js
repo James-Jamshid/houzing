@@ -4,26 +4,23 @@ import { ReactComponent as logoImg } from "../../assets/img/logo.svg"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
 `
 export const Main = styled.div`
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
+  flex-direction: column;
   background: var(--colorPrimary);
 `
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background: var(--colorPrimary); */
   color: white;
   padding: var(--padding);
   height: 64px;
   font-size: 16px;
   width: 100%;
   //max-width 14404 berganimzda uni yana bitta containerga orab wrapper default widthni 100% qilib qoyish kere
-  max-width: 1440px;
+  /* max-width: 1440px; */
 
   //max-width ni yozishdan maqsad, yonlariga padding berganmiz agar
   //maxwidth berilmasa, ekran kattalshgan sari paddinglar ham kattalashib ketaveradi.
@@ -31,13 +28,8 @@ export const Wrapper = styled.div`
 //eng katta Containerni olchamiga tegilmidi
 //wrapper bolsa w 1440 bolishi kerak.
 export const Section = styled.div`
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
-  /* border: 1px solid black; */
-  /* :hover {
-    color: #ac6b34;
-  } */
   cursor: ${({ logo }) => logo && "pointer"};
   .active {
     color: #ac6b34;

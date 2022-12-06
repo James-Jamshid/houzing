@@ -1,5 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom"
 import { navbar } from "../../utils/Navbar"
+import Filter from "../filter"
 import Button from "../generic/buttons"
 import { Container, Link, Logo, Main, Section, Wrapper } from "./Styled"
 const Navbar = () => {
@@ -35,7 +36,8 @@ const Navbar = () => {
           </Section>
         </Wrapper>
       </Main>
-
+      <Filter />
+      {/* Main buyerda navbarniki outlet esa bodyniki */}
       <Outlet />
     </Container>
   )
