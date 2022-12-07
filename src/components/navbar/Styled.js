@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import styled from "styled-components"
-import { ReactComponent as logoImg } from "../../assets/img/logo.svg"
+import { ReactComponent as logoImg } from "../../assets/logo/logo.svg"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

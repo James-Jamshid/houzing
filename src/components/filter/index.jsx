@@ -1,5 +1,3 @@
-// import { Outlet } from "react-router-dom"
-
 import { Dropdown } from "antd"
 import { Button, Input } from "../generic"
 import {
@@ -10,31 +8,37 @@ import {
   MenuWrapper,
   Section,
 } from "./Styled"
-
+import { useRef } from "react"
 const Filter = () => {
+  const countryRef = useRef()
+  const regionRef = useRef()
+  const cityRef = useRef()
+  const zipRef = useRef()
+  const roomRef = useRef()
+  const sizeRef = useRef()
+  const sortRef = useRef()
+  const minPriceRef = useRef()
+  const maxPriceRef = useRef()
   const menu = (
     <MenuWrapper>
       <h1 className='subTitle'>Adress</h1>
       <Section>
-        <input placeholder='Country' type='text' />
-        <input placeholder='Region' type='text' />
-        <input placeholder='City' type='text' />
-        <input placeholder='Zip code' type='text' />
+        <Input ref={countryRef} placeholder='Country' type='text' />
+        <Input ref={regionRef} placeholder='Region' type='text' />
+        <Input ref={cityRef} placeholder='City' type='text' />
+        <Input ref={zipRef} placeholder='Zip code' type='text' />
       </Section>
       <h1 className='subTitle'>Apartment Info</h1>
       <Section>
-        <input placeholder='Rooms' type='text' />
-        <input placeholder='Size' type='text' />
-        <input placeholder='Sort' type='text' />
+        <Input ref={roomRef} placeholder='Rooms' type='text' />
+        <Input ref={sizeRef} placeholder='Size' type='text' />
+        <Input ref={sortRef} placeholder='Sort' type='text' />
       </Section>
       <h1 className='subTitle'>Price</h1>
       <Section>
-        {" "}
-        <input placeholder='Min price' type='text' />
-        <input placeholder='Max price' type='text' />
+        <Input ref={minPriceRef} placeholder='Min price' type='text' />
+        <Input ref={maxPriceRef} placeholder='Max price' type='text' />
       </Section>
-      <h1 className='subTitle'>Footer</h1>
-      <Section></Section>
     </MenuWrapper>
   )
   return (
@@ -43,13 +47,9 @@ const Filter = () => {
         icon={<IconHouses />}
         placeholder={"Enter an address, neighborhood, city, or ZIP code"}
       />
-
       <Dropdown
         overlay={menu}
-        // menu={{
-        //   items,
-        // }}
-        placement='bottomRight'
+        // menu={{ items }}
       >
         <div>
           <Button type={"light"}>
