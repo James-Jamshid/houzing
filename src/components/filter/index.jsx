@@ -57,7 +57,7 @@ const Filter = () => {
           </Button>
         </div>
       </Dropdown>
-      {/* antd designdan dropdown ni kodini torvoldik, cssini tortib bomadi,
+      {/* antd designdan dropdown ni kodini tortvoldik, cssini tortib bomadi,
       keyin ichida menu qismi bor edi uni o'chirib tashlab overlay yozdik.
       overlayni ichiga yuqorida ozgaruvchi ochib shunga tenglashtirib qoydik */}
       <Button>

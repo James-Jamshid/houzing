@@ -1,33 +1,33 @@
 import styled from "styled-components"
+// export const getType = ({ type }) => {
+//   switch (type) {
+//     case "dark":
+//       return {
+//         background: "transparent",
+//         border: "1px solid white",
+//         color: "white",
+//       }
+//     case "primary":
+//       return {
+//         background: " #0061df",
+//         border: "none",
+//         color: "white",
+//       }
+//     case "light":
+//       return {
+//         background: "#white",
+//         border: "1px solid #E6E9EC",
+//         color: "#0D263B",
+//       }
+//     default:
+//       return {
+//         background: " #0061df",
+//         border: "none",
+//         color: "white",
+//       }
+//   }
+// }
 
-export const getType = ({ type }) => {
-  switch (type) {
-    case "dark":
-      return {
-        background: "transparent",
-        border: "1px solid white",
-        color: "white",
-      }
-    case "primary":
-      return {
-        background: " #0061df",
-        border: "none",
-        color: "white",
-      }
-    case "light":
-      return {
-        background: "#white",
-        border: "1px solid #E6E9EC",
-        color: "#0D263B",
-      }
-    default:
-      return {
-        background: " #0061df",
-        border: "none",
-        color: "white",
-      }
-  }
-}
 export const Container = styled.input`
   display: flex;
   align-items: center;
