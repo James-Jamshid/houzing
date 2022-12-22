@@ -9,14 +9,14 @@ const { REACT_APP_BASE_URL: url } = process.env
 export const Properties = (props) => {
   const [data, setData] = useState([])
   const { search } = useLocation()
-  //backend dan malumotlar shunday olib kelinadi.
+
   useEffect(() => {
     fetch(`${url}/houses/list${search}`)
       .then((res) => res.json())
       .then((res) => {
-        setData(res?.data)
-      }, [])
-  })
+        setData(res?.data || [])
+      })
+  }, [search])
 
   return (
     <Container>
