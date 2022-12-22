@@ -49,6 +49,9 @@ const Filter = () => {
       />
       <Dropdown
         overlay={menu}
+        placement='bottomRight'
+        arrow={{ pointAtCenter: true }}
+        trigger='click'
         // menu={{ items }}
       >
         <div>

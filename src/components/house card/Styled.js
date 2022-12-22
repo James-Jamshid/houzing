@@ -11,18 +11,21 @@ export const Container = styled.div`
   background: #ffffff;
   border-radius: 3px;
   width: 380px;
-  height: 429px;
-  margin: 100px; // buni o'chirib tashlash kerak
+  /* height: 429px; */
+  height: auto;
+  /* margin: 100px; // buni o'chirib tashlash kerak */
   display: flex;
   flex-direction: column;
   gap: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding-bottom: 10px;
 `
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 5px 20px;
+  padding: 0px 20px;
   background: #ffffff;
 `
 export const Img = styled.img`

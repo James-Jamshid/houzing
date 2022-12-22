@@ -42,3 +42,9 @@ body {
   line-height: 20px;
   color: #696969;
 }
+.inline {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  /* bu classname textlar 1 qatordan kopayib ketsa 1 qatorga qaytarib qoyadi. */
+}
